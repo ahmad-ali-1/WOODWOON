@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Woodwoon</title>
+    <link rel="icon" href="assets/logo-sm.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7bf00c0e57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="d-xl-block bg-white d-none">
+
+        <div class="d-flex justify-content-between arbi my-1 container">
+            <div class="ms-3">ھوالاحمد</div>
+            <div>بسم الله الرحمن الرحيم</div>
+            <div class="me-3">ھوالھادی</div>
+        </div>
+
+        <!------------------------------------- social links ----------------------------->
+
+        <div class="d-flex container justify-content-between mt-3">
+            <div class="width d-flex justify-content-between ">
+                <div>
+                    <a class="text-dark no"><i class="fa-solid fa-phone fa-sm text-dark"></i> (+92)3021153405</a>
+                </div>
+                <div><span class="vr"></span></div>
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook-f fa-sm" style="color: #000205;"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-instagram " style="color: #000000;"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-linkedin " style="color: #010409;"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-twitter " style="color: #00060f;"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-xl" style="color: #14f089;"></i></a>
+                </div>
+            </div>
+
+            <!---------------------------------- The Modal ---------------------------------->
+
+            <div>
+                <div>
+                    <a class="btn" data-bs-toggle="modal" href="#modal">
+                        <i class="fa-regular fa-user fa-sm text-dark"></i>
+                        <span class="login">Login Or Register</span>
+                    </a>
+                </div>
+                <div id="modal" class="modal ">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 470px;">
+                        <div class="modal-content">
+                            <div class="bdiv">
+                                <span class="bspn rounded-circle shadow-lg">
+                                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                                </span>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <ul class="nav justify-content-center" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mhead active" data-bs-toggle="pill" href="#login">LOGIN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mhead" data-bs-toggle="pill" href="#register">REGISTER</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="login" class="tab-pane active">
+                                        <form class="d-grid" action="/action_page.php">
+                                            <div class="mb-3 mt-3">
+                                                <p class="mtext m-0">Enter you username and password to login.</p>
+                                                <input type="email" class="form-control minput rounded-0 mt-2"
+                                                    id="email" placeholder="Username or email" name="email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control minput rounded-0" id="pwd"
+                                                    placeholder="Password" name="pswd">
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" name="remember">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn-block brown text-light border-0 py-2">Login</button>
+                                            <a class="text-dark mtext lost mx-auto mt-3 mb-5" href="#">Lost
+                                                password?</a>
+                                        </form>
+                                    </div>
+                                    <div id="register" class="tab-pane fade">
+                                        <form class="d-grid" action="/action_page.php">
+                                            <div class="mb-3 mt-3">
+                                                <p class="mtext m-0">Enter you email and password to register.</p>
+                                                <input type="email" class="form-control minput rounded-0 mt-2"
+                                                    id="email" placeholder="Email address" name="email">
+                                            </div>
+                                            <p class="mtext m-0">A link to set a password will be sent to your email
+                                                address.</p>
+                                            <div class="form-check mb-3 mt-2">
+                                                <label class="form-check-label mtext">
+                                                    <input class="form-check-input" type="checkbox" name="remember">
+                                                    Subscribe to our newsletter
+                                                </label>
+                                            </div>
+                                            <p class="mtext">Your personal data will be used to support your experience
+                                                throughout
+                                                this website, to manage access to your account,
+                                                and for other purposes described in our privacy policy.</p>
+                                            <button type="submit"
+                                                class="btn-block brown text-light border-0 mt-2 mb-5 py-2">Register</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0">
+    </header>
+
+    <!---------------------- Header For tab/mobile ------------------------>
+
+    <div id="mobileheader" class="d-lg-none  d-flex justify-content-between py-1">
+
+        <!------------- Offcanvas Sidebar --------------->
+
+        <div class="d-flex justify-content-start">
+            <div class="offcanvas offcanvas-start canvaswidth" id="sidenav">
+                <div class="offcanvas-body p-0">
+                    <ul class="nav w-100 row border-bottom m-0 menu-account" role="tablist">
+                        <li class="nav-item col text-center bg-light">
+                            <a class="nav-link text-dark active " data-bs-toggle="tab" href="#menu">
+                                <i class="fa-solid fa-bars fa-lg"></i> Menu
+                            </a>
+                        </li>
+                        <li class="nav-item col text-center border-start bg-light">
+                            <a class="nav-link text-dark" data-bs-toggle="tab" href="#account">
+                                <i class="fa-regular fa-user fa-lg"></i> Account
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="menu" class="tab-pane active">
+                            <div class="d-grid">
+                                <a class="border-bottom" href="#">Home</a>
+                                <a class="border-bottom" href="">Bedroom</a>
+                                <a class="border-bottom" href="">Living Room</a>
+                                <a class="border-bottom" href="">Dining Room</a>
+                                <a class="border-bottom" href="">Office</a>
+                                <a class="border-bottom" href="">Shop</a>
+                                <a class="border-bottom" href="">Blog</a>
+                                <a class="border-bottom" href="">Contact Us</a>
+                            </div>
+                        </div>
+                        <div id="account" class="tab-pane ">
+                            <div class="d-grid">
+                                <a class="border-bottom" href="#"><i class="fa-regular fa-heart pe-4"></i> Wishlist</a>
+                                <a class="border-bottom" href="#"><i class="fa-regular fa-user  pe-4"></i>
+                                    Login or Register</a>
+                                <a class="border-bottom" href="#"><i class="fa-solid fa-truck fa-xs pe-4"></i>
+                                    Order Traacking </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas-footer">
+                    <div class=" d-flex justify-content-around p-2 border-top">
+                        <div>
+                            <a href=""><i class="fa-brands fa-facebook-f fa-sm" style="color: #000205;"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa-brands fa-instagram " style="color: #000000;"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa-brands fa-linkedin " style="color: #010409;"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa-brands fa-twitter " style="color: #00060f;"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa-brands fa-whatsapp fa-xl" style="color: #14f089;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn p-0 ms-3 my-auto" data-bs-toggle="offcanvas" data-bs-target="#sidenav">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <!------------------- Logo ------------------>
+
+        <div>
+            <span class="mt-3">Contact Us</span>
+        </div>
+
+        <!------------- Search and cart ------------>
+
+        <div id="headend">
+            <!---------- Search Modal ------------>
+            <a class="text-dark me-2" data-bs-toggle="modal" href="#searchmodal"><i
+                    class=" fa-solid fa-magnifying-glass fa-lg"></i></a>
+            <div id="searchmodal" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-conten">
+                        <div class="modal-body">
+                            kjfdlkjdlfkjaflkj
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------ Cart Canvas------------>
+            <a class="text-dark btn p-0" data-bs-toggle="offcanvas" href="#cartcanvas"><i
+                    class="fa-solid fa-cart-shopping fa-lg" style="position: relative;"><sup
+                        class="cart-sup">0</sup></i></a>
+            <div id="cartcanvas" class="offcanvas offcanvas-end">
+                <div class="offcanvas-header pt-4 mt-1 pb-2 border-bottom mx-4 px-0">
+                    <h5>SHOPING CART</h5>
+                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                    <i class="fa-solid fa-cart-shopping fa-2xl text-secondary cartbg"></i>
+                    <p class="mt-4">Empty cart.</p>
+                    <button type="button" class="btn shopingcartbtn">CONTINUE SHOPING <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------- The logo and search bar ----------------------------------->
+
+    <div class="py-4 sticky bg-white d-xl-block d-none">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-center">
+                    <img class="logoimg" src="assets/logo.png" alt="woodwoon">
+                </div>
+                <div class="d-flex">
+                    <div class="input-group mt-2">
+                        <button type="button"
+                            class="btn dropdown-toggle text-secondary bg-light font searchhieght border "
+                            data-bs-toggle="dropdown">
+                            All Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item font-sm" href="#">Bedroom</a></li>
+                            <li><a class="dropdown-item font-sm" href="#">Bed</a></li>
+                            <li><a class="dropdown-item font-sm" href="#">Bed Set</a></li>
+                            <li><a class="dropdown-item font-sm" href="#">Bedroom Chari</a></li>
+                            <li><a class="dropdown-item font-sm" href="#">Dressing Table</a></li>
+                            <li><a class="dropdown-item font-sm" href="#">wardrobe</a></li>
+                        </ul>
+                        <input type="text" class=" search bang font" placeholder=" Find some class of woodwork">
+                        <button class="brown px-2 border-0 searchhieght "><span class="px-1"><i
+                                    class="fa-solid fa-magnifying-glass text-light"></i></span></button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start cartmargin">
+                    <a href="" class="mt-3">
+                        <i class="fa-solid fa-cart-shopping text-dark ms-5 pt-2" style="position: relative;">
+                            <sup>0</sup></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- The navbar --------------------------------->
+
+    <nav class="d-xl-flex justify-content-center d-none navindex">
+        <ul>
+            <li>
+                <a href="woodwoon.html">Home</a>
+            </li>
+            <li>
+                <a href="">Bedroom <i class="fa-solid fa-caret-down fa-sm"></i>
+                    <ul class="">
+                        <li><a href="#">Bed Set</a></li>
+                        <li><a href="#">Bed</a></li>
+                        <li><a href="#">Dressing Table</a></li>
+                        <li><a href="#">Wardrobe</a></li>
+                        <li><a href="#">Bedroom Chair</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="">Living Room <i class="fa-solid fa-caret-down fa-sm"></i>
+                    <ul class="">
+                        <li><a href="#">Center Table</a></li>
+                        <li><a href="#">Sofa Set</a></li>
+                        <li><a href="#">Corner/L Shape Sofa Set</a></li>
+                        <li><a href="#">Wooden Sofa</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="">Dining Room <i class="fa-solid fa-caret-down fa-sm"></i>
+                    <ul>
+                        <li><a href="#">Dining Table</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="">Office <i class="fa-solid fa-caret-down fa-sm"></i>
+                    <ul>
+                        <li><a href="#">Office Chair</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="">Shop</a>
+            </li>
+            <li>
+                <a href="">Blog</a>
+            </li>
+            <li>
+                <a href="contact us.html">Contact Us</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!------------------------------------ Recently watched ---------------------------------------->
+
+    <div class=" d-xl-flex d-none brown">
+        <div class="container d-flex justify-content-end ">
+            <a id="recently-viewed-a" class="rcv text-white p-2" href="#"><i class="fa-solid fa-clock-rotate-left"></i>
+                Recently Viewed
+                <i class="fa-solid fa-caret-down fa-xs"></i>
+                <div class="recently-viewed-div">
+                    <p class="text text-center vrcenter">You have no recently viewed item</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!---------------------------------- Previous page button ----------------------------->
+
+    <div class="blue-4">
+        <div class="container d-flex justify-content-between  py-4 font text-secondary">
+            <div><a class="a-simple" href="woodwoon.html">Home</a> / Page</div>
+            <div><a class="a-simple text-secondary" href="#" onclick="history.back()"><i
+                        class="fa-solid fa-arrow-left"></i> Previous page</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- Contact Us Heading ----------------------------->
+
+    <div class="my-5 pt-5">
+        <div class="container">
+            <h2 class="heading-contact mt-5">Contact Us</h2>
+        </div>
+    </div>
+
+    <!-------------------------------- Map And Contacts ------------------------------->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 ">
+                12
+            </div>
+            <div class="col-12 col-md-6 overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.67573163286!2d74.3066184439477!3d31.58793901778756!
+                    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191c9dbf0ddeb1%3A0x13bfcdb10fb490de!2sBadshahi%20Mosque!5e0
+                    !3m2!1sen!2s!4v1720657535422!5m2!1sen!2s" width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------FOOTER --------------------------------->
+
+    <footer>
+        <!--------------------------------- FAQs ---------------------------------->
+
+        <section class="pb-5 mt-5" style="background-color: #fff6f6;">
+            <div class="container d-grid">
+                <h2 class="faq-set mb-4">FAQs</h2>
+                <a onclick="myFunction1()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What kind of furniture does Woodwoon offer?
+                </a>
+                <div id="collapse-1" class="collapse-display p-3">
+                    Woodwoon offers a wide range of furniture products, including bedroom furniture (beds, dressing
+                    tables,
+                    chairs), living room furniture (sofa sets, coffee tables, corner tables), and dining room furniture
+                    (dining tables, chairs).
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction2()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What materials does Woodwoon use to make their furniture?
+                </a>
+                <div id="collapse-2" class="collapse-display p-3">
+                    We use high quality materials such as Indian rosewood, MDF, Acacia Wood, and high-quality fabrics.
+                    We
+                    also use deco paint, high gloss polish, and other premium materials to ensure our furniture is both
+                    durable and stylish.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction3()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    Can I customize my furniture order?
+                </a>
+                <div id="collapse-3" class="collapse-display p-3">
+                    Yes, we offer custom shipping for larger items like beds, dressing tables, sofa sets, and dining
+                    tables.
+                    Please contact us to discuss your specific needs and we will do our best to accommodate your
+                    request.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction4()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What is the price range for Woodwoon's furniture products?
+                </a>
+                <div id="collapse-4" class="collapse-display p-3">
+                    Our prices vary depending on the item and materials used, but we strive to offer competitive prices
+                    while maintaining the highest quality standards.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction5()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What kind of furniture does Woodwoon offer?
+                </a>
+                <div id="collapse-5" class="collapse-display p-3">
+                    Woodwoon offers a wide range of furniture products, including bedroom furniture (beds, dressing
+                    tables,
+                    chairs), living room furniture (sofa sets, coffee tables, corner tables), and dining room furniture
+                    (dining tables, chairs).
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction6()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What materials does Woodwoon use to make their furniture?
+                </a>
+                <div id="collapse-6" class="collapse-display p-3">
+                    We use high quality materials such as Indian rosewood, MDF, Acacia Wood, and high-quality fabrics.
+                    We
+                    also use deco paint, high gloss polish, and other premium materials to ensure our furniture is both
+                    durable and stylish.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction7()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    Can I customize my furniture order?
+                </a>
+                <div id="collapse-7" class="collapse-display p-3">
+                    Yes, we offer custom shipping for larger items like beds, dressing tables, sofa sets, and dining
+                    tables.
+                    Please contact us to discuss your specific needs and we will do our best to accommodate your
+                    request.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction8()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What is the price range for Woodwoon's furniture products?
+                </a>
+                <div id="collapse-8" class="collapse-display p-3">
+                    Our prices vary depending on the item and materials used, but we strive to offer competitive prices
+                    while maintaining the highest quality standards.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction9()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What kind of furniture does Woodwoon offer?
+                </a>
+                <div id="collapse-9" class="collapse-display p-3">
+                    Woodwoon offers a wide range of furniture products, including bedroom furniture (beds, dressing
+                    tables,
+                    chairs), living room furniture (sofa sets, coffee tables, corner tables), and dining room furniture
+                    (dining tables, chairs).
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction10()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What materials does Woodwoon use to make their furniture?
+                </a>
+                <div id="collapse-10" class="collapse-display p-3">
+                    We use high quality materials such as Indian rosewood, MDF, Acacia Wood, and high-quality fabrics.
+                    We
+                    also use deco paint, high gloss polish, and other premium materials to ensure our furniture is both
+                    durable and stylish.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction11()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    Can I customize my furniture order?
+                </a>
+                <div id="collapse-11" class="collapse-display p-3">
+                    Yes, we offer custom shipping for larger items like beds, dressing tables, sofa sets, and dining
+                    tables.
+                    Please contact us to discuss your specific needs and we will do our best to accommodate your
+                    request.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction12()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What is the price range for Woodwoon's furniture products?
+                </a>
+                <div id="collapse-12" class="collapse-display p-3">
+                    Our prices vary depending on the item and materials used, but we strive to offer competitive prices
+                    while maintaining the highest quality standards.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction13()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What kind of furniture does Woodwoon offer?
+                </a>
+                <div id="collapse-13" class="collapse-display p-3">
+                    Woodwoon offers a wide range of furniture products, including bedroom furniture (beds, dressing
+                    tables,
+                    chairs), living room furniture (sofa sets, coffee tables, corner tables), and dining room furniture
+                    (dining tables, chairs).
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction14()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What materials does Woodwoon use to make their furniture?
+                </a>
+                <div id="collapse-14" class="collapse-display p-3">
+                    We use high quality materials such as Indian rosewood, MDF, Acacia Wood, and high-quality fabrics.
+                    We
+                    also use deco paint, high gloss polish, and other premium materials to ensure our furniture is both
+                    durable and stylish.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction15()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    Can I customize my furniture order?
+                </a>
+                <div id="collapse-15" class="collapse-display p-3">
+                    Yes, we offer custom shipping for larger items like beds, dressing tables, sofa sets, and dining
+                    tables.
+                    Please contact us to discuss your specific needs and we will do our best to accommodate your
+                    request.
+                </div>
+                <hr class="text-secondary my-2">
+                <a onclick="myFunction16()" class="question-color">
+                    <i class="fa-solid fa-caret-right" style="color: #0a0a0a;"></i>&#160;
+                    What is the price range for Woodwoon's furniture products?
+                </a>
+                <div id="collapse-16" class="collapse-display p-3">
+                    Our prices vary depending on the item and materials used, but we strive to offer competitive prices
+                    while maintaining the highest quality standards.
+                </div>
+            </div>
+            <hr class="text-secondary my-2">
+        </section>
+
+        <!------------------------------- Information ------------------------------->
+
+        <div class="container my-5">
+            <div class="row">
+
+                <!----------- Contact Info ----------->
+                <div class="col-lg-4">
+                    <p class="contact-info">CONTACT INFO</p>
+                    <p class="my-2 font text-secondary"><i class="fa-solid fa-location-dot fa-sm me-3"></i>Wireless
+                        Pull,
+                        East Canal
+                        Bank, RYK</p>
+                    <p class="my-2 font text-secondary"><i class="fa-solid fa-phone fa-sm me-3"></i>(+92) 301
+                        0983333/(+92)
+                        308
+                        2607537</p>
+                    <span class="my-2"><i class="fa-regular fa-envelope fa-sm"></i><a class="email-link ms-3"
+                            href="mailto:cuteboy16713">support@cuteboy16713</a></span>
+                    <div class="facebook-icon my-2">
+                        <div><a class="p-1" href=""><i class="fa-brands fa-facebook-f fa-sm"></i></a></div>
+                        <div><a class="p-1" href=""><i class="fa-brands fa-instagram"></i></a></div>
+                        <div><a class="p-1" href=""><i class="fa-brands fa-linkedin"></i></a></div>
+                        <div><a class="p-1" href=""><i class="fa-brands fa-twitter"></i></a></div>
+                        <div><a class="p-1" href=""><i class="fa-brands fa-whatsapp fa-xl"
+                                    style="color: #b6c355;"></i></a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div><img class="fbr" src="assets/fbr.webp" alt=""></div>
+                        <div>
+                            <p class="reg">Reg. No<br>3130356270863</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------- Information Area ---------->
+                <div class="col-lg-3 info-area">
+                    <p class="contact-info mb-2">INFORMATION AREA</p>
+                    <a class="text-secondary" href="">Shipping policy</a><br>
+                    <a class="text-secondary" href="">Privacy Policy</a><br>
+                    <a class="text-secondary" href="">Return policy</a><br>
+                    <a class="text-secondary" href="">Refund Policy</a><br>
+                    <a class="text-secondary" href="">Terms of Use</a><br>
+                    <a class="text-secondary" href="">Contact Us</a><br>
+                </div>
+
+                <!------------ User Area ----------->
+                <div class="col-lg-2 info-area">
+                    <p class="contact-info mb-2">USER AREA</p>
+                    <a class="text-secondary" href="">My account</a><br>
+                    <a class="text-secondary" href="">Orders</a><br>
+                    <a class="text-secondary" href="">Addresses</a><br>
+                </div>
+
+                <!----------- Shoping Area ---------->
+                <div class="col-lg-3 info-area">
+                    <p class="contact-info mb-2">SHOPING AREA</p>
+                    <a class="text-secondary" href="">About Us</a><br>
+                    <a class="text-secondary" href="">Shop</a><br>
+                    <a class="text-secondary" href="">Bedroom Furniture</a><br>
+                    <a class="text-secondary" href="">Living Room Furniture</a><br>
+                    <a class="text-secondary" href="">Dining Room Furniture</a><br>
+                    <a class="text-secondary" href="">Office Furniture</a><br>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------- copyright -------------------------->
+        <hr>
+        <div class="container footer mb-4">
+            <div class="row">
+                <div class="my-3 col-12 col-lg-6 text-center text-lg-start ">
+                    <span class="text-secondary">@ Copyright 2023</span><a class="email-link"
+                        href="Untitled-1.html">woodwoon.com</a>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-end">
+                    <img class="img1" src="assets/payfast.webp" alt="">
+                    <img class="me-5" src="assets/leopards.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------- footer for mobile --------------------------->
+
+    <footer id="footerm" class="d-lg-none d-md-flex d-flex bg-white">
+        <div class="row w-100 text-center py-2">
+            <a class="col-3" href=" Untitled-1.html"><i class="fa-solid fa-house fa-lg text-dark"></i><br>Home</a>
+            <a class="col-3" href=" #"><i class="fa-regular fa-heart fa-lg text-dark"></i>
+                <sup>0</sup><br>Wishlist</a>
+            <a class="col-3" href=" #"><i class="fa-regular fa-pen-to-square fa-lg text-dark"></i><br>Order</a>
+            <a class="col-3" href=" #"><i class="fa-regular fa-user fa-lg text-dark"></i><br>Account</a>
+        </div>
+    </footer>
+
+    <!------------------------------- Whatsapp icon  -------------------------------->
+
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/+923021153405">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("collapse-1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("collapse-2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction3() {
+            var x = document.getElementById("collapse-3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction4() {
+            var x = document.getElementById("collapse-4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction5() {
+            var x = document.getElementById("collapse-5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction6() {
+            var x = document.getElementById("collapse-6");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction7() {
+            var x = document.getElementById("collapse-7");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction8() {
+            var x = document.getElementById("collapse-8");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction9() {
+            var x = document.getElementById("collapse-9");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction10() {
+            var x = document.getElementById("collapse-10");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction11() {
+            var x = document.getElementById("collapse-11");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction12() {
+            var x = document.getElementById("collapse-12");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction13() {
+            var x = document.getElementById("collapse-13");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction14() {
+            var x = document.getElementById("collapse-14");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction15() {
+            var x = document.getElementById("collapse-15");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction16() {
+            var x = document.getElementById("collapse-16");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

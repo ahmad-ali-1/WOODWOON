@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Woodwoon</title>
+    <link rel="icon" href="assets/logo-sm.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7bf00c0e57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-12 col-md-6">why</div>
+        <div class="col-12 col-md-6">why</div>
+    </div>
+
+    <header class="d-xl-block bg-white d-none">
+
+        <div class="d-flex justify-content-between arbi my-1 container">
+            <div class="ms-3">ھوالاحمد</div>
+            <div>بسم الله الرحمن الرحيم</div>
+            <div class="me-3">ھوالھادی</div>
+        </div>
+
+        <!------------------------------------- social links ----------------------------->
+
+        <div class="d-flex container justify-content-between mt-3">
+            <div class="width d-flex justify-content-between ">
+                <span class="border-end pe-2"><i class="fa-solid fa-phone fa-sm text-dark"> </i>(+92)3021153405</span>
+                <a class="p-0 m-0" href=""><i class="fa-brands fa-facebook-f fa-sm text-dark"></i></a>
+                <a class="p-0 m-0" href=""><i class="fa-brands fa-instagram  text-dark"></i></a>
+                <a class="p-0 m-0" href=""><i class="fa-brands fa-linkedin  text-dark"></i></a>
+                <a class="p-0 m-0" href=""><i class="fa-brands fa-twitter  text-dark"></i></a>
+                <a class="p-0 m-0" href=""><i class="fa-brands fa-whatsapp fa-xl" style="color: #14f089;"></i></a>
+            </div>
+
+            <!---------------------------------- The Modal ---------------------------------->
+
+            <div>
+                <div>
+                    <a class="btn" data-bs-toggle="modal" href="#modal">
+                        <i class="fa-regular fa-user fa-sm text-dark"></i>
+                        <span class="login">Login Or Register</span>
+                    </a>
+                </div>
+                <div id="modal" class="modal ">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 470px;">
+                        <div class="modal-content">
+                            <div class="bdiv">
+                                <span class="bspn rounded-circle shadow-lg">
+                                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                                </span>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <ul class="nav justify-content-center" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mhead active" data-bs-toggle="pill" href="#login">LOGIN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mhead" data-bs-toggle="pill" href="#register">REGISTER</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="login" class="tab-pane active">
+                                        <form class="d-grid" action="/action_page.php">
+                                            <div class="mb-3 mt-3">
+                                                <p class="mtext m-0">Enter you username and password to login.</p>
+                                                <input type="email" class="form-control minput rounded-0 mt-2"
+                                                    id="email" placeholder="Username or email" name="email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control minput rounded-0" id="pwd"
+                                                    placeholder="Password" name="pswd">
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" name="remember">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn-block brown text-light border-0 py-2">Login</button>
+                                            <a class="text-dark mtext lost mx-auto mt-3 mb-5" href="#">Lost
+                                                password?</a>
+                                        </form>
+                                    </div>
+                                    <div id="register" class="tab-pane fade">
+                                        <form class="d-grid" action="/action_page.php">
+                                            <div class="mb-3 mt-3">
+                                                <p class="mtext m-0">Enter you email and password to register.</p>
+                                                <input type="email" class="form-control minput rounded-0 mt-2"
+                                                    id="email" placeholder="Email address" name="email">
+                                            </div>
+                                            <p class="mtext m-0">A link to set a password will be sent to your email
+                                                address.</p>
+                                            <div class="form-check mb-3 mt-2">
+                                                <label class="form-check-label mtext">
+                                                    <input class="form-check-input" type="checkbox" name="remember">
+                                                    Subscribe to our newsletter
+                                                </label>
+                                            </div>
+                                            <p class="mtext">Your personal data will be used to support your experience
+                                                throughout
+                                                this website, to manage access to your account,
+                                                and for other purposes described in our privacy policy.</p>
+                                            <button type="submit"
+                                                class="btn-block brown text-light border-0 mt-2 mb-5 py-2">Register</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0">
+    </header>
+
+</body>
+
+</html>
